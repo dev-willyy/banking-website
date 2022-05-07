@@ -3,7 +3,7 @@ import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
-    background: #000;
+    background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -80,42 +80,39 @@ export const NavLinks = styled(LinkScroll)`
     height: 100%;
     cursor: pointer;
 
-    ${"" /* Adding a class called "active" */}
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-block-end: 3px solid #01bf71;
     }
 `;
 
-
 export const NavBtn = styled.nav`
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
 
-      @media screen and (mex-width: 760px) {
-            display: none;
-      }
-`
-
-export const NavBtnLink = styled(LinkRouter)`
-      border-radius: 50px;
-      background: #01bf71;
-      white-space: nowrap;
-      padding: 10px 22px;
-      color: #010606;
-      font-size: 16px;
-      outline: none;
-      cursor: pointer;
-      transition: all 0.2s ease-in-out;
-      text-decoration: none;
-
-      &:hover {
-            transition: all 0.2s ease-in-out;
-            background: #fff;
-            color: #010606;
-            
-      }
-
-      @media screen and (max-width: 768px) {
+    @media screen and (mex-width: 760px) {
         display: none;
     }
-`
+`;
+
+export const NavBtnLink = styled(LinkRouter)`
+    border-radius: 50px;
+    background: #01bf71;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
