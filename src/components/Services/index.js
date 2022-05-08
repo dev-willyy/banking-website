@@ -17,7 +17,11 @@ const Services = () => {
         <ServicesContainer id="services">
             <ServicesH1>Our Services</ServicesH1>
             <ServicesWrapper>
-                <ServicesCard>
+                <ServicesCard
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"
+                >
                     <ServicesIcon src={Icon1} />
                     <ServicesH2>Reduce expenses</ServicesH2>
                     <ServicesP>
@@ -25,7 +29,11 @@ const Services = () => {
                         revenue.
                     </ServicesP>
                 </ServicesCard>
-                <ServicesCard>
+                <ServicesCard
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="3000"
+                >
                     <ServicesIcon src={Icon2} />
                     <ServicesH2>Virtual Offices</ServicesH2>
                     <ServicesP>
@@ -33,7 +41,11 @@ const Services = () => {
                         world.
                     </ServicesP>
                 </ServicesCard>
-                <ServicesCard>
+                <ServicesCard
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="3000"
+                >
                     <ServicesIcon src={Icon3} />
                     <ServicesH2>Premium Benefits</ServicesH2>
                     <ServicesP>
