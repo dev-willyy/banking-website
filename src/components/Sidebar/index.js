@@ -10,7 +10,6 @@ import {
     SidebarRoute,
 } from "./SidebarElements";
 
-// to="/ is used together with pathname" if it is a react-router link
 const Sidebar = ({ isOpen, toggle }) => {
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>

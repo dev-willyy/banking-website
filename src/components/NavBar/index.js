@@ -39,7 +39,7 @@ const NavBar = ({ toggle }) => {
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
                         <NavLogo to="/" onClick={toggleHome}>
-                            dolla
+                            piggybanker
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars />
@@ -47,7 +47,6 @@ const NavBar = ({ toggle }) => {
                         <NavMenu>
                             <NavItem>
                                 <NavLinks
-                                    // spy onClick bottom-highlight working already
                                     to="about"
                                     smooth={true}
                                     duration={500}

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-// should resolve scrollTo issue for the form page
 export default function ScrollToTop() {
     const { pathname } = useLocation();
 

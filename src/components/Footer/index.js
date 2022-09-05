@@ -22,7 +22,6 @@ import {
     SocialMedia,
     SocialMediaWrap,
 } from "./FooterElements";
-// FooterLink should be changed to a tag with href="" instead of link tag if absolute path is required
 
 const Footer = () => {
     const toggleHome = () => {
@@ -50,6 +49,7 @@ const Footer = () => {
                             <FooterLink to="/signin">Support</FooterLink>
                             <FooterLink to="/signin">Destinations</FooterLink>
                             <FooterLink to="/signin">Sponsorship</FooterLink>
+                            <FooterLink to="/signin">Contributions</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
@@ -59,6 +59,9 @@ const Footer = () => {
                             <FooterLink to="/signin">Ambassador</FooterLink>
                             <FooterLink to="/signin">Agency</FooterLink>
                             <FooterLink to="/signin">Influencer</FooterLink>
+                            <FooterLink to="/signin">
+                                Video Testimonials
+                            </FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Social Media</FooterLinkTitle>
@@ -73,11 +76,11 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to="/" onClick={toggleHome}>
-                            dolla
+                            piggybanker
                         </SocialLogo>
                         <WebsiteRights>
-                            dolla &copy; {new Date().getFullYear()} All rights
-                            reserved.
+                            Williams Madu &copy; {new Date().getFullYear()}, All
+                            rights reserved.
                         </WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink

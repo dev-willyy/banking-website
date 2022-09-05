@@ -14,6 +14,7 @@ export const homeObjOne = {
     dark: true,
     primary: true,
     darkText: false,
+    homePage: true,
 };
 
 export const homeObjTwo = {
@@ -26,12 +27,13 @@ export const homeObjTwo = {
     description:
         "We have you covered no matter where you are located. All you need is an internet connection and a phone or computer.",
     buttonLabel: "Learn More",
-    imgStart: false,
+    imgStart: true,
     img: require("../images/svg-2.png"),
     alt: "Piggybank",
     dark: false,
     primary: false,
     darkText: true,
+    homePage: true,
 };
 
 export const homeObjThree = {
@@ -46,8 +48,9 @@ export const homeObjThree = {
     buttonLabel: "Start Now",
     imgStart: false,
     img: require("../images/svg-4.png"),
-    alt: "Car",
+    alt: "Payment Card",
     dark: false,
     primary: false,
     darkText: true,
+    homePage: false,
 };

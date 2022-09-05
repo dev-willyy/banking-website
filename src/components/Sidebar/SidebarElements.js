@@ -14,7 +14,6 @@ export const SidebarContainer = styled.aside`
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
-    /* Ternary Operator can also be used here | 👇 would be uncommented shortly */
     opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
     top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
@@ -39,7 +38,6 @@ export const SidebarWrapper = styled.div`
 
 export const SidebarMenu = styled.ul`
     display: grid;
-    ${"" /* Important grid sub-properties */}
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;

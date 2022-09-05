@@ -1,4 +1,4 @@
-import styled from "styled-components"; //Defines the variables in this file as a styled Component
+import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 
@@ -15,7 +15,7 @@ export const Nav = styled.nav`
     z-index: 10;
 
     @media screen and (max-width: 960px) {
-        transition: 0.8s all ease;
+        transition: all 0.8s ease-in;
     }
 `;
 export const NavbarContainer = styled.div`
@@ -35,7 +35,7 @@ export const NavLogo = styled(LinkRouter)`
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: 24px;
+    margin-left: 15.6px;
     font-weight: bold;
     text-decoration: none;
 `;
