@@ -25,11 +25,7 @@ export const Icon = styled(LinkRouter)`
     text-decoration: none;
     color: rgba(1, 147, 86, 1);
     font-weight: 700;
-    font-size: 32px;
-    font-family: "Poppins", sans-serif;
-    @media screen and (max-width: 580px) {
-        font-size: 24px;
-    }
+    font-size: 24px;
 `;
 
 export const Container = styled.div`
