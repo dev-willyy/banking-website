@@ -2,29 +2,28 @@ import React from "react";
 import {
     Container,
     Form,
-    FormHeader,
     FormInput,
     FormLabel,
     FormSubmitInput,
-    HeaderIcon,
+    HeaderSpan,
     Icon,
+    SignInHeader,
     SignInWrapper,
 } from "./SigninElements";
-import { BsPiggyBank } from "react-icons/bs";
+import { GiPiggyBank } from "react-icons/gi";
 
 const SignIn = () => {
     return (
         <>
             <SignInWrapper>
-                <Icon to="/">piggybanker</Icon>
+                <SignInHeader>
+                    <HeaderSpan>
+                        <GiPiggyBank />
+                    </HeaderSpan>
+                    <Icon to="/">piggybanker</Icon>
+                </SignInHeader>
+
                 <Container>
-                    <FormHeader>
-                        <HeaderIcon>
-                            {" "}
-                            <BsPiggyBank />
-                        </HeaderIcon>{" "}
-                        piggy
-                    </FormHeader>
                     <Form action="#">
                         <FormLabel htmlFor="name" required>
                             Username
