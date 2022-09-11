@@ -37,6 +37,7 @@ export const Container = styled.div`
     max-height: 460px;
     width: 400px;
     border-radius: 0.9rem;
+    box-shadow: 0 0 2px 4px rgba(1, 147, 20, 1);
     margin: 20px auto 0;
     padding: 0.2rem 2.2rem 3.4rem 1.4rem;
 
@@ -65,6 +66,12 @@ export const Form = styled.form`
         white-space: nowrap;
         color: rgba(10, 201, 122, 1);
         margin-bottom: 7px;
+        text-transform: uppercase;
+        text-align: center;
+
+        @media only screen and (max-width: 300px) {
+            font-size: 14px;
+        }
     }
 
     ::after {
@@ -75,6 +82,10 @@ export const Form = styled.form`
         opacity: 0.7;
         position: relative;
         top: -40%;
+    }
+
+    @media only screen and (max-width: 300px) {
+        font-size: 14px;
     }
 `;
 
